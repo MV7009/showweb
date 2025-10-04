@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Контрольная работа">
+    <!-- Font Awesome - для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <!-- Наш CSS - кастомные стили -->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Как связаться с нами</title>
+</head>
+
+<body>
+    <!-- ШАПКА -->
+    <header class="top-bar">
+        <div class="top-logo">
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+        </div>
+        <div class="top-slogan">СПА центр на берегу залива</div>
+        <div class="top-phone">
+            <i class="fas fa-phone"></i>
+            <a href="tel:+7(812) 454-14-14">+7 (812) 454-14-14</a>
+        </div>
+    </header>
+    <!-- МЕНЮ -->
+    <nav class="menu-wrapper">
+        <button class="menu-icon"><i class="fas fa-bars"></i></button>
+        <ul class="menu-list">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="contacts.html" class="active">Контакты</a></li>
+        </ul>
+    </nav>
+    <!-- КОНТЕНТ -->
+    <main class="contacts">
+        <h1>Как нас найти</h1>
+        <div class="content-wrapper">
+            <div class="map-container">
+                <div style="position:relative;overflow:hidden;">
+                    <a href="https://yandex.ru/maps/org/baltiyskiy_bereg/63984373507/?utm_medium=mapframe&utm_source=maps" 
+                    style="color:#eee;font-size:12px;position:absolute;top:0px;">Балтийский берег</a>
+                    <a href="https://yandex.ru/maps/37180/zelenogorsk/category/sanatorium/184106404/?utm_medium=mapframe&utm_source=maps" 
+                    style="color:#eee;font-size:12px;position:absolute;top:14px;">Санаторий в Зеленогорске</a>
+                    <iframe src="https://yandex.ru/map-widget/v1/org/baltiyskiy_bereg/63984373507/?ll=29.726152%2C60.192285&z=14" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;">
+            </iframe>
+        </div>
+            </div>
+            <div class="form-container">
+                <h2>Обратная связь</h2>
+                <form class="feedback">
+                    <label for="name">Имя: </label>
+                    <input type="text" placeholder="Ваше имя" id="name" name="name" required />
+                    <label for="email">E-mail: </label>
+                    <input type="email" id="email" name="email" required />
+                    <label for="message">Ваше сообщение: </label>
+                    <textarea name="message" rows="5" id="message" required>Ваше сообщение</textarea>
+                    <input type="submit" value="Отправить">
+                </form>
+            </div>
+        </div>
+    </main>
+    <!-- ПОДВАЛ -->
+    <footer class="footer">
+        <div class="footer-section">
+            <h3>Контакты</h3>
+            <p><i class="fas fa-phone"></i>&nbsp;<a href="tel:7 (812) 454-14-14">+7 (812) 454-14-14</a></p>
+            <p><i class="fas fa-envelope"></i>&nbsp;<a href="mailto:contact@baltbereg.info">contact@baltbereg.info</a></p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Мы в соцсетях</h3>
+            <p>
+                <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+            </p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Наша миссия</h3>
+            <p>Нести отдых и восстановление нашим пациентам</p>
+        </div>
+    </footer>
+    <button id="topBtn" onclick="scrollToTop()">↑</button>
+    <script src="js/gotop.js"></script>
+    <script src="js/bmenu.js"></script>
+</body>
+
+</html>

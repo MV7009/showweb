@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Первый сайт про умения">
+    <!-- Font Awesome - для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Наш CSS - кастомные стили -->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>То, что мы умеем</title>
+</head>
+
+<body>
+    <!-- ШАПКА -->
+    <header class="top-bar">
+        <div class="top-logo">
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+        </div>
+        <div class="top-slogan">СПА центр на берегу залива</div>
+        <div class="top-phone">
+            <i class="fas fa-phone"></i>
+            <a href="tel:+79871234567">+7 (812) 454-14-14</a>
+        </div>
+    </header>
+    <!-- МЕНЮ -->
+    <nav class="menu-wrapper">
+        <button class="menu-icon"><i class="fas fa-bars"></i></button>
+        <ul class="menu-list">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html" class="active">О нас</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+    <!-- КОНТЕНТ -->
+    <main class="container">
+        <h1>СПА центр санатория «Балтийский берег»</h1><br>
+        <div class="car-center">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="1000">
+                        <img src="slides/slide1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1000">
+                        <img src="slides/slide2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1000">
+                        <img src="slides/slide3.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1000">
+                        <img src="slides/slide4.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1000">
+                        <img src="slides/slide5.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Следующий</span>
+                </button>
+            </div>
+        </div>
+        <p>СПА-комплекс с уникальными технологиями релакса и восстановления на берегу Финского залива. СПА комплекс "Балтийский берег" это место, в котором методики оздоровления сочетаются с практиками индустрии красоты.</p>
+     <!--  
+    	<h4>Услуги СПА-комплекса</h4>
+            <table>
+            <thead>
+                <tr>
+                <th scope="row">Наименование услуг</th>
+                <th scope="row">Стоимость услуги</th>
+                </tr>
+            </thead>
+				<tbody>
+    				<tr>
+                       	<td>Посещение бассейна 1 сеанс</td>
+						<td>500 руб.</td>
+					</tr>
+					<tr>
+						<td>Посещение инфракрасной сауны 1 сеанс</td>
+						<td>1 600 руб.</td>
+					</tr>
+					<tr>
+						<td>Прием СПА-капсулы 1 сеанс</td>
+						<td>2700 руб.</td>
+					</tr>
+					<tr>
+						<td>Аренда уличной купели 2 часа</td>
+						<td>1200 руб.</td>
+					</tr>
+					<tr>
+						<td>Финская сауна до 6 чел. на 2 часа</td>
+						<td>1930 руб.</td>
+					</tr>
+					<tr>
+						<td>КРИОСАУНА 1 сеанс</td>
+						<td>2700 руб.</td>
+					</tr>
+                </tbody>
+			</table>
+			
+		-->
+			
+    			   	
+    </main>
+    <br>
+    <!-- ПОДВАЛ -->
+    <footer class="footer">
+        <div class="footer-section">
+            <h3>Контакты</h3>
+            <p><i class="fas fa-phone"></i>&nbsp;<a href="tel:+78124541414">+7 (812) 454-14-14</a></p>
+            <p><i class="fas fa-envelope"></i>&nbsp;<a href="mailto:contact@baltbereg.info">contact@baltbereg.info</a></p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Мы в соцсетях</h3>
+            <p>
+                <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+            </p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Наша миссия</h3>
+            <p>Нести отдых и восстановление нашим пациентам</p>
+        </div>
+    </footer>
+    <button id="topBtn" onclick="scrollToTop()">↑</button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/gotop.js"></script>
+    <script src="js/bmenu.js"></script>
+</body>
+
+</html>
